@@ -139,6 +139,16 @@ Lambda(str);
 // 那么就可以直接使用 Lambda()。
 ```
 
+*带返回值的Lambda*
+``` cpp
+// -> int : 表示lambda函数需要返回一个int类型
+auto addOne = [](int a) -> int {
+   return a + 1;// 必须返回一个int
+};
+int sum = addOne(2);// 将 lambda 返回的值赋给 sum
+// sum的结果为 3 ;
+```
+
 *如果你已经有了编程基础，并且你的编程语言中有 block， 闭包， 回调 。。。等此类说法时，你此时的心里应该是这样的:*
 
 ![m1.JPG](https://raw.githubusercontent.com/Yuanjihua1/UE4LambdaPractice/master/img/m1.JPG)
@@ -215,3 +225,6 @@ int * a = new int(6);
 // ???
 // 读者可以自行上网查资料。自己探索，知识才能内化成自己的东西。
 ```
+
+
+
